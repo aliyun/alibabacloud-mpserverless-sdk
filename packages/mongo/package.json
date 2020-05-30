@@ -1,0 +1,30 @@
+{
+  "name": "@alicloud/mpserverless-mongo",
+  "author": "SangLv <idu.angela@gmail.com>",
+  "version": "3.0.1",
+  "description": "Ant Basement SDK - Mongo",
+  "main": "dist/umd/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/umd/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "npm run tsc:umd && npm run tsc:esm",
+    "tsc:umd": "tsc -p tsconfig.json",
+    "tsc:esm": "tsc -p tsconfig.esm.json",
+    "tsc:w": "npm run tsc -- -w"
+  },
+  "dependencies": {
+    "@alicloud/mpserverless-core": "^2.2.7",
+    "reflect-metadata": "^0.1.12",
+    "tslib": "^1.9.3"
+  }
+}

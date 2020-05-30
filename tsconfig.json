@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "umd",
+    "moduleResolution": "node",
+    "charset": "utf8",
+    "allowJs": false,
+    "declaration": true,
+    "skipLibCheck": true,
+    "inlineSourceMap": true,
+    "skipDefaultLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "lib": [ "es2015", "es2016" ]
+  },
+  "exclude": [
+    "node_modules",
+    "packages/**/dist",
+    "packages/**/node_modules"
+  ]
+}

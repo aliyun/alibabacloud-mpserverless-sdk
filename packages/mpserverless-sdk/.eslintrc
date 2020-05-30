@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-egg",
+  "globals": {
+    "my": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

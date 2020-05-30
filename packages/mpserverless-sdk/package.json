@@ -1,0 +1,40 @@
+{
+  "name": "@alicloud/mpserverless-sdk",
+  "author": "zack-lin <linzegia@gmail.com>",
+  "version": "2.3.0",
+  "description": "JavaScript SDK for Alicloud MPServerless",
+  "main": "dist/umd/index.js",
+  "module": "dist/index.js",
+  "types": "dist/umd/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "npm run tsc:umd && npm run tsc:esm",
+    "tsc:umd": "tsc -p tsconfig.json",
+    "tsc:esm": "tsc -p tsconfig.esm.json",
+    "tsc:w": "npm run tsc -- -w",
+    "build": "webpack"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@alicloud/mpserverless-core": "^2.2.7",
+    "@alicloud/mpserverless-services": "^3.0.0",
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "crypto-js": "^3.1.9-1",
+    "mime": "^2.4.4",
+    "tslib": "^1.9.3",
+    "webpack": "^4.27.1",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.1.2"
+  }
+}

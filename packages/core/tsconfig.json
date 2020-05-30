@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist/umd",
+    "lib": ["dom", "es5" , "scripthost"]
+  },
+  "include": [
+    "src"
+  ]
+}

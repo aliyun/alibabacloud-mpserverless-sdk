@@ -1,0 +1,49 @@
+{
+  "extends": "tslint-config-egg",
+  "linterOptions": {
+    "exclude": [
+      "test"
+    ]
+  },
+  "rules": {
+    "typedef": [
+      true,
+      "call-signature",
+      "property-declaration"
+    ],
+    "completed-docs": [
+      true,
+      {
+        "methods": {
+          "visibilities": ["exported"],
+          "privacies": ["public"]
+        },
+        "functions": {
+          "visibilities": ["exported"],
+          "privacies": ["public"]
+        }
+      }
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-static-field",
+          "protected-static-field",
+          "private-static-field",
+          "public-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "public-static-method",
+          "protected-instance-method",
+          "protected-static-method",
+          "private-instance-method",
+          "private-static-method"
+        ]
+      }
+    ]    
+  }
+}

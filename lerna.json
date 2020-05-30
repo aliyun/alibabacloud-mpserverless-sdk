@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "2.3.0",
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "npmClient": "npm"
+    }
+  }
+}

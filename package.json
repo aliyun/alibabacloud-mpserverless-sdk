@@ -1,0 +1,34 @@
+{
+  "name": "alicloud-mpserverless",
+  "private": true,
+  "ci": {
+    "versions": "8, 10"
+  },
+  "scripts": {
+    "init": "lerna init && npm i && lerna bootstrap --hoist",
+    "tsc": "make build P=core",
+    "tsc:w": "make watch-all",
+    "lint": "make lint-all",
+    "test": "TS_NODE_PROJECT=test/tsconfig.json egg-bin test --full-trace --typescript",
+    "cov": "TS_NODE_PROJECT=test/tsconfig.json egg-bin cov --full-trace --typescript",
+    "ci": "npm run lint && npm run cov",
+    "prepublish": "lerna bootstrap --hoist",
+    "postversion": "make build-all",
+    "alpha": "lerna publish prerelease --preid=alpha --npm-tag=next"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.3",
+    "@types/node": "^10.5.0",
+    "autod": "^3.0.1",
+    "copy-webpack-plugin": "^5.0.5",
+    "crypto-js": "^3.1.9-1",
+    "egg-bin": "^4.9.0",
+    "lerna": "^3.22.0",
+    "mocha": "^4.1.0",
+    "mz-modules": "^2.1.0",
+    "sinon": "^7.1.1",
+    "tslint": "^5.11.0",
+    "tslint-config-egg": "^1.0.0",
+    "typescript": "^3.6.3"
+  }
+}
