@@ -65,7 +65,7 @@ export class BaseCommand {
         if (isObject(d[k])) {
           if (Object.keys(d[k]).length === 0) {
             // fix query不能为{}的问题
-            if (k !== 'query' || JSON.stringify(d[k] !== '{}')) {
+            if (k !== 'query' || JSON.stringify(d[k]) !== '{}') {
               delete d[k];
             }
           } else {
