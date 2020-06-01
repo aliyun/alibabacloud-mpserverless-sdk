@@ -1,4 +1,4 @@
-import { BuiltInError, ErrorJSONObject } from '@alicloud/mpserverless-core';
+import { BuiltInError, ErrorJSONObject } from '@ant-basement/core';
 export declare class MPServerlessClientError extends BuiltInError {
     name: string;
     code: string;

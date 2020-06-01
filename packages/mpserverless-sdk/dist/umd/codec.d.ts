@@ -1,4 +1,4 @@
-import { GenericObject, HTTPRequestEncoder, HTTPResponseObject, HTTPResponseDecoder, HTTPMethod, PREFIX } from '@alicloud/mpserverless-core';
+import { GenericObject, HTTPRequestEncoder, HTTPResponseObject, HTTPResponseDecoder, HTTPMethod, PREFIX } from '@ant-basement/core';
 export interface MiniProgramHTTPRequestObject {
     url: string;
     data?: GenericObject<any>;

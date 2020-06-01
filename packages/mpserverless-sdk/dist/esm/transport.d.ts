@@ -1,4 +1,4 @@
-import { HTTPTransport, HTTPResponseObject, GenericObject } from '@alicloud/mpserverless-core';
+import { HTTPTransport, HTTPResponseObject, GenericObject } from '@ant-basement/core';
 import { MiniProgramFileUploadObject, MiniProgramHTTPRequestObject, MiniProgramHTTPRequestEncoder, MiniProgramGetFileInfoObject, MiniProgramGetImageInfoObject } from './codec';
 export declare type OAuthScope = 'auth_user' | 'auth_zhima' | 'auth_base';
 export declare type OAuthProvider = 'alipay_openapi' | 'wechat_openapi';

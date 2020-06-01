@@ -1,5 +1,5 @@
-import { Basement as Base, BasementOptions } from '@alicloud/mpserverless-core';
-import { DbService, FileService, AuthService, FunctionService } from '@alicloud/mpserverless-services';
+import { Basement as Base, BasementOptions } from '@ant-basement/core';
+import { DbService, FileService, AuthService, FunctionService } from '@ant-basement/services';
 import { MiniProgramHTTPTransport, AuthorizeOptions } from './transport';
 import { NetworkService } from './network';
 interface UserService extends AuthService {
