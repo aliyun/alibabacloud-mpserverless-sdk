@@ -1,7 +1,7 @@
 logs/
 run/
 lib/
-dist/
+#dist/
 node_modules/
 coverage/
 .nyc_output/
