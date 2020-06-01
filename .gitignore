@@ -16,8 +16,8 @@ deprecated/
 .rpt2_cache
 .nyc_output
 
-*.js
-*.d.ts
+# *.js
+# *.d.ts
 *.log
 package-lock.json
 !packages/**/src/global.d.ts
