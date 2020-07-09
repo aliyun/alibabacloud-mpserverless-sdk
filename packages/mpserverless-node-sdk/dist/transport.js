@@ -60,7 +60,6 @@ class FunctionHTTPTransport extends mpserverless_core_1.HTTPTransport {
         const { url, data } = encoded;
         this.logger.info(url + ', request ' + JSON.stringify(encoded, null, 2));
         const raw = await this.httpRequest(url, encoded);
-        console.log('request encoded: ', encoded);
         const decoder = new codec_1.NodeCoreHTTPResponseDecoder();
         const response = decoder.decode(raw, data && data.method === 'serverless.db.default.execute');
         this.logger.info(url + ', response ' + JSON.stringify(response, null, 2));
