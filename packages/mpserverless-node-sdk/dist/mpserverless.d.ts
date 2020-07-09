@@ -1,8 +1,8 @@
 import { MPServerlessCore as Base, MPServerlessOptions as BaseOptions, GenericObject } from '@alicloud/mpserverless-core';
 import { FunctionHTTPTransport } from './transport';
 import { FunctionService } from '@alicloud/mp-function-service';
-import { FunctionFileService } from '@ali/mpserverless-node-file-service';
-import { FunctionUserService } from '@ali/mpserverless-node-user-service';
+import { FunctionFileService } from '@alicloud/mpserverless-node-file-service';
+import { FunctionUserService } from '@alicloud/mpserverless-node-user-service';
 import { DbService } from '@alicloud/mp-db-service';
 export declare class MPServerless extends Base {
     db: DbService;

@@ -1,5 +1,5 @@
 {
-  "name": "@ali/mpserverless-node-sdk",
+  "name": "@alicloud/mpserverless-node-sdk",
   "author": "junmo <qwe_lingkun@163.com>",
   "version": "0.0.1-alpha",
   "description": "Ant MPServerless JavaScript SDK for FaaS Egg Framework",
@@ -22,8 +22,8 @@
   "dependencies": {
     "@alicloud/mp-db-service": "^0.1.3",
     "@alicloud/mp-function-service": "^0.1.3",
-    "@ali/mpserverless-node-file-service": "^0.0.1-alpha",
-    "@ali/mpserverless-node-user-service": "^0.0.1-alpha",
+    "@alicloud/mpserverless-node-file-service": "^0.0.1-alpha",
+    "@alicloud/mpserverless-node-user-service": "^0.0.1-alpha",
     "@alicloud/mpserverless-core": "^0.1.3",
     "tslib": "^1.9.3",
     "urllib": "^2.34.2"

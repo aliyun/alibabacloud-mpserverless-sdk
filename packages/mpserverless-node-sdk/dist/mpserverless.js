@@ -5,8 +5,8 @@ const mpserverless_core_1 = require("@alicloud/mpserverless-core");
 const transport_1 = require("./transport");
 const urllib_1 = tslib_1.__importDefault(require("urllib"));
 const mp_function_service_1 = require("@alicloud/mp-function-service");
-const mpserverless_node_file_service_1 = require("@ali/mpserverless-node-file-service");
-const mpserverless_node_user_service_1 = require("@ali/mpserverless-node-user-service");
+const mpserverless_node_file_service_1 = require("@alicloud/mpserverless-node-file-service");
+const mpserverless_node_user_service_1 = require("@alicloud/mpserverless-node-user-service");
 const mp_db_service_1 = require("@alicloud/mp-db-service");
 class MPServerless extends mpserverless_core_1.MPServerlessCore {
     constructor(options) {
