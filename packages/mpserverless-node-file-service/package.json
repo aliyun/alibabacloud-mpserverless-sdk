@@ -1,7 +1,7 @@
 {
   "name": "@alicloud/mpserverless-node-file-service",
   "author": "junmo <qwe_lingkun@163.com>",
-  "version": "0.0.1-beta",
+  "version": "0.0.1",
   "description": "MPServerless Function File Service",
   "main": "dist/umd/index.js",
   "types": "dist/umd/index.d.ts",
