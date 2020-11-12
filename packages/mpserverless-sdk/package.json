@@ -1,7 +1,7 @@
 {
   "name": "@alicloud/mpserverless-sdk",
   "author": "zack-lin <linzegia@gmail.com>",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "JavaScript SDK for Alicloud MPServerless",
   "main": "dist/umd/index.js",
   "module": "dist/index.js",

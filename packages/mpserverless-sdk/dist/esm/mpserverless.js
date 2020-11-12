@@ -154,16 +154,16 @@ var MPServerless = (function (_super) {
     }
     Object.defineProperty(MPServerless.prototype, "version", {
         get: function () {
-            return '2.2.5';
+            return '2.3.3';
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     Object.defineProperty(MPServerless.prototype, "ua", {
         get: function () {
-            return 'pkg_name:@alicloud/mpserverless-sdk;ver:2.2.5;';
+            return 'pkg_name:@alicloud/mpserverless-sdk;ver:2.3.3;';
         },
-        enumerable: true,
+        enumerable: false,
         configurable: true
     });
     MPServerless.prototype.createTransport = function (options) {
