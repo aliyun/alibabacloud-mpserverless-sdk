@@ -1,0 +1,35 @@
+{
+  "name": "@alicloud/mpserverless-miniapp-core",
+  "author": "junmo <qwe_lingkun@163.com>",
+  "version": "3.0.0",
+  "description": "Miniapp Core for MPServerless Platform SDK",
+  "main": "dist/index.js",
+  "browser": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "tsc": "npm run tsc:esm",
+    "tsc:esm": "tsc -p tsconfig.esm.json",
+    "tsc:w": "npm run tsc -- -w",
+    "build": "npm run tsc && webpack"
+  },
+  "dependencies": {
+    "@alicloud/mp-db-service": "^3.0.0",
+    "@alicloud/mp-file-service": "^3.0.0",
+    "@alicloud/mp-function-service": "^3.0.0",
+    "@alicloud/mp-proxy-service": "^3.0.0",
+    "@alicloud/mp-user-service": "^3.0.0",
+    "@alicloud/mpserverless-core": "^3.0.0",
+    "crypto-js": "^3.1.9-1"
+  }
+}
