@@ -1,0 +1,36 @@
+{
+  "name": "@alicloud/mpserverless-core",
+  "author": "junmo <qwe_lingkun@163.com>",
+  "version": "3.0.0",
+  "description": "MPServerless JavaScript SDK Core",
+  "main": "dist/index.js",
+  "browser": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/umd/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "basement",
+    "ant-basement",
+    "serverless"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "tsc": "npm run tsc:umd && npm run tsc:esm",
+    "tsc:umd": "tsc -p tsconfig.json",
+    "tsc:esm": "tsc -p tsconfig.esm.json",
+    "tsc:w": "npm run tsc -- -w",
+    "build": "npm run tsc && webpack"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "parameter": "^3.6.0",
+    "regenerator-runtime": "^0.13.5"
+  }
+}

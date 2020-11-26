@@ -1,0 +1,1 @@
+export { MPServerless } from './mpserverless';

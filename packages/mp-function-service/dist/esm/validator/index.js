@@ -1,0 +1,4 @@
+import { Validator as FunctionValidator } from '@alicloud/mpserverless-core';
+export { FunctionValidator };
+export * from './schema';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvdmFsaWRhdG9yL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxTQUFTLElBQUksaUJBQWlCLEVBQUUsTUFBTSw2QkFBNkIsQ0FBQztBQUU3RSxPQUFPLEVBQUUsaUJBQWlCLEVBQUUsQ0FBQztBQUM3QixjQUFjLFVBQVUsQ0FBQyJ9
