@@ -1,4 +1,5 @@
-import { BaseService, GenericObject } from '@alicloud/mpserverless-core';
+/// <reference types="node" />
+import { HTTPTransport, BaseService, GenericObject } from '@alicloud/mpserverless-core';
 export interface OSSUploadOptions {
     id: string;
     key: string;
@@ -26,19 +27,11 @@ export interface OSSUploadResponseDataJSONObject {
 }
 export declare function OSSUploadResponseFormat(data: GenericObject<string>): OSSUploadResponseDataJSONObject;
 export declare const OSSUploadHeaderList: string[];
-export declare const WHITELIST_EXTENSIONS: string[];
-declare enum OSSEnv {
-    PUBLIC = "public",
-    PRIVATE = "private"
-}
 export interface FileUploadOptions {
-    filePath: string;
+    filePath?: string;
+    fileBuffer?: Buffer;
     fileName?: string;
-    fileType?: 'image';
-    fileSize?: number;
     extension?: string;
-    env?: OSSEnv;
-    path?: string;
     meta?: GenericObject<string>;
     headers?: {
         contentType?: string;
@@ -46,13 +39,15 @@ export interface FileUploadOptions {
         contentEncoding?: string;
         contentDisposition?: string;
     };
-    file?: string | any;
-    timeout?: number;
 }
 export declare class FunctionFileService extends BaseService {
-    protected appSecret: string;
+    private request;
+    constructor(transport: HTTPTransport, request: any);
     deleteFile(url: string): Promise<any>;
     getUploadFileOptions(options: FileUploadOptions): Promise<any>;
+    getFileSize(filePath: string): Promise<number>;
+    reportOSSUpload(id: string, contentType?: string): Promise<void>;
+    uploadFile(options: FileUploadOptions): Promise<any>;
     private getOSSUploadOptionsFromPath;
+    private upload;
 }
-export {};
