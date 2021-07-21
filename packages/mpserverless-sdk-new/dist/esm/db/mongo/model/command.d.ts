@@ -240,6 +240,10 @@ export declare class FindAndUpdateDocumentCommand extends BaseCommand {
                     type: string;
                     required: boolean;
                 };
+                returnNewDocument: {
+                    type: string;
+                    required: boolean;
+                };
             };
         };
     };
