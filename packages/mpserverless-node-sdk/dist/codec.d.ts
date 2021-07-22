@@ -1,4 +1,4 @@
-import { GenericObject, HTTPRequestEncoder, HTTPResponseObject, HTTPResponseDecoder, HTTPMethod, PREFIX } from '@ali/mpserverless-core-inner';
+import { GenericObject, HTTPRequestEncoder, HTTPResponseObject, HTTPResponseDecoder, HTTPMethod, PREFIX } from '@alicloud/mpserverless-core';
 export interface NodeCoreHTTPRequestObject {
     url: string;
     data: GenericObject<any>;
