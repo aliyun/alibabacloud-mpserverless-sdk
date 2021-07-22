@@ -1,4 +1,4 @@
-import { HTTPTransport, HTTPResponseObject, PREFIX } from '@alicloud/mpserverless-core';
+import { HTTPTransport, HTTPResponseObject, PREFIX } from '@ali/mpserverless-core-inner';
 import { NodeCoreHTTPRequestEncoder } from './codec';
 export declare class FunctionHTTPTransport extends HTTPTransport {
     protected userId: string;

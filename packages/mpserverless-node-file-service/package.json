@@ -1,7 +1,7 @@
 {
   "name": "@alicloud/mpserverless-node-file-service",
   "author": "junmo <qwe_lingkun@163.com>",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "MPServerless Function File Service",
   "main": "dist/umd/index.js",
   "types": "dist/umd/index.d.ts",
@@ -19,7 +19,7 @@
     "tsc:w": "npm run tsc -- -w"
   },
   "dependencies": {
-    "@alicloud/mpserverless-core": "3.0.0",
+    "@alicloud/mpserverless-core": "^3.0.0",
     "tslib": "^1.9.3"
   },
   "publishConfig": {
