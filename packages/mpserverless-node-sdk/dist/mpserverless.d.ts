@@ -9,6 +9,7 @@ export declare class MPServerless extends Base {
     user: FunctionUserService;
     file: FunctionFileService;
     function: FunctionService;
+    httpProxyClient: object;
     protected options: BaseOptions;
     protected transport: FunctionHTTPTransport;
     private pkg;
