@@ -20,7 +20,8 @@ interface EnvApp {
     getFileInfo?(options?: any): any;
 }
 interface AuthorOptions {
-    authorType: 'anonymous' | 'unanonymous';
+    authorType?: 'anonymous' | 'unanonymous';
+    authType?: 'anonymous' | 'unanonymous';
 }
 declare enum Platform {
     WECHAT = "wechat",
