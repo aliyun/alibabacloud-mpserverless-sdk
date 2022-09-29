@@ -19,6 +19,7 @@ export declare class HTTPTransport {
     setLogger(logger: Logger): void;
     setTimeout(timeout?: number | string): void;
     get timeoutOption(): number;
+    get spaceIdOption(): string;
     setSpaceId(spaceId: string): void;
     request(encoder: HTTPRequestEncoder): Promise<HTTPResponseObject>;
 }
