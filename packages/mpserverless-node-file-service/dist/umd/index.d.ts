@@ -24,6 +24,7 @@ export interface OSSUploadResponseDataJSONObject {
     OSSAccessKeyId: string;
     securityToken: string;
     cdnDomain: string;
+    ossCallbackUrl?: string;
 }
 export declare function OSSUploadResponseFormat(data: GenericObject<string>): OSSUploadResponseDataJSONObject;
 export declare const OSSUploadHeaderList: string[];
@@ -44,6 +45,7 @@ export declare class FunctionFileService extends BaseService {
     private request;
     constructor(transport: HTTPTransport, request: any);
     deleteFile(url: string): Promise<any>;
+    info(fileIds: string | string[], options?: object): Promise<GenericObject<any>>;
     getUploadFileOptions(options: FileUploadOptions): Promise<any>;
     getFileSize(filePath: string): Promise<number>;
     reportOSSUpload(id: string, contentType?: string): Promise<void>;
