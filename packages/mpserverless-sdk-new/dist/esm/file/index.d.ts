@@ -48,6 +48,7 @@ export interface FileUploadOptions {
     };
     file?: string | any;
     timeout?: number;
+    cloudPath?: string;
 }
 export declare class MPFileService extends BaseService {
     private upload;
@@ -55,7 +56,7 @@ export declare class MPFileService extends BaseService {
     deleteFile(url: string): Promise<any>;
     uploadFile(options: FileUploadOptions): Promise<any>;
     info(fileIds: string | string[], options?: object): Promise<any>;
-    getOSSUploadOptionsFromPath(relativePath: string, targetPath: string, fileSize?: number): Promise<any>;
+    getOSSUploadOptionsFromPath(relativePath: string, targetPath: string, fileSize?: number, cloudPath?: string): Promise<any>;
     reportOSSUpload(id: string, contentType?: string): Promise<void>;
     private validate;
 }

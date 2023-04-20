@@ -51,6 +51,10 @@ export declare const uploadFileSchema: {
                 type: string;
                 required: boolean;
             };
+            cloudPath: {
+                type: string;
+                required: boolean;
+            };
         };
     };
 };
