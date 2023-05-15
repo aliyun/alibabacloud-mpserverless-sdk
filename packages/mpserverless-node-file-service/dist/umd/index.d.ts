@@ -34,6 +34,7 @@ export interface FileUploadOptions {
     fileName?: string;
     extension?: string;
     meta?: GenericObject<string>;
+    cloudPath?: string;
     headers?: {
         contentType?: string;
         cacheControl?: string;
