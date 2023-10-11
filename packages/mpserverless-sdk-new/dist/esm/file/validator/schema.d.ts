@@ -7,11 +7,6 @@ export declare const uploadFileSchema: {
                 required: boolean;
                 min: number;
             };
-            extension: {
-                type: string;
-                required: boolean;
-                values: string[];
-            };
             filePath: {
                 type: string;
             };

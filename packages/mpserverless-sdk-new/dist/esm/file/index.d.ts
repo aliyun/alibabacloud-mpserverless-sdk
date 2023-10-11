@@ -56,7 +56,7 @@ export declare class MPFileService extends BaseService {
     deleteFile(url: string): Promise<any>;
     uploadFile(options: FileUploadOptions): Promise<any>;
     info(fileIds: string | string[], options?: object): Promise<any>;
-    getOSSUploadOptionsFromPath(relativePath: string, targetPath: string, fileSize?: number, cloudPath?: string): Promise<any>;
+    getOSSUploadOptionsFromPath(relativePath: string, targetPath: string, fileSize?: number, cloudPath?: string, meta?: GenericObject<string>): Promise<any>;
     reportOSSUpload(id: string, contentType?: string): Promise<void>;
     private validate;
 }
