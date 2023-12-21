@@ -6,6 +6,7 @@ export declare class FunctionHTTPTransport extends HTTPTransport {
     protected uid: string;
     protected requestId: string;
     protected httpRequest: any;
+    protected defaultHeaders: any;
     constructor(endpoint: string);
     setAuthUID(uid: string): void;
     setRequestId(requestId: string): void;
