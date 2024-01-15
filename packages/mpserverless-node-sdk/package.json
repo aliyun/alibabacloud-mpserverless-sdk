@@ -1,7 +1,7 @@
 {
   "name": "@alicloud/mpserverless-node-sdk",
   "author": "junmo <qwe_lingkun@163.com>",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Ant MPServerless JavaScript SDK for FaaS Egg Framework",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
